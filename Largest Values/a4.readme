@@ -1,0 +1,22 @@
+
+
+301243689 farzina Farzin Ahmed
+
+----------------------------------------------------------------------------------------------------------------------
+  
+Given: Two lists of integers L1 and L2;
+Output: The largest number that occurs in L1 but does not occur in L2, or "None" if there is no such number. 
+
+Data Structures: 
+	Max Heap for L1 ( which has been modified from the min heap used in assignment 3 ) 
+	Binary Search Tree for L2 ( methods obtained from ones provided in lectures )
+
+----------------------------------------------------------------------------------------------------------------------
+
+Method: 
+I take the largest element in L1 ( which is the root and the first element in the list ) and search it through the L2 which is the binary search tree.
+If the largest element in L1 cannot be found in L2, then return that value (since it is the largest value in L1 that is not in L2). If it is found, extract the next largest element in L1 and repeat until there are no elements left in L1. If L1 is empty then print "NONE". 
+
+----------------------------------------------------------------------------------------------------------------------
+
+
